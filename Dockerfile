@@ -1,14 +1,7 @@
 FROM alpine
-
-ARG VCS_REF
-ARG BUILD_DATE
-
 # Metadata
-LABEL org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.name="helm-kubectl-aws2" \
-      org.label-schema.url="https://hub.docker.com/r/teochenglim/helm-kubectl-aws/" \
-      org.label-schema.vcs-url="https://github.com/teochenglim/helm-kubectl-aws" \
-      org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.name="helm-kubectl-aws2" \
+      org.label-schema.url="https://hub.docker.com/repository/docker/teochenglim/helm-kubectl-aws2" \
 
 # Note: Latest version of kubectl may be found at:
 # https://aur.archlinux.org/packages/kubectl-bin/

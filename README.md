@@ -11,7 +11,7 @@
 
     ## ECR Login
 
-    $ $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+    $ aws ecr get-login-password --region [YOUR_AWS_DEFAULT_REGION] | docker login --username AWS --password-stdin [YOUR_AWS_ACCOUNT_ID].dkr.ecr.region.amazonaws.com
 
     ```
 
